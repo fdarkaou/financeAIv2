@@ -256,7 +256,7 @@
 import LoadingPage from '@/components/unique/LoadingPage.vue'
 
 export default {
-    name: 'Workout',
+    name: 'Simulation',
     components: {
         LoadingPage
     },
@@ -294,28 +294,28 @@ export default {
     async sendPrompt() {
     try {
         const financialData = {
-        name: this.name,
-        objective: this.objective,
-        age: this.age,
-        retirement: this.retirement,
-        employment_status: this.employment_status,
-        monthly_investment: this.monthly_investment,
-        monthly_income: this.monthly_income,
-        current_portfolio: this.current_portfolio,
-        risk_tolerance: this.risk_tolerance,
-        invested_amount: this.invested_amount,
-        investment_experience: this.investment_experience,
-        investment_horizon: this.investment_horizon,
+            name: this.name,
+            objective: this.objective,
+            age: this.age,
+            retirement: this.retirement,
+            employment_status: this.employment_status,
+            monthly_investment: this.monthly_investment,
+            monthly_income: this.monthly_income,
+            current_portfolio: this.current_portfolio,
+            risk_tolerance: this.risk_tolerance,
+            invested_amount: this.invested_amount,
+            investment_experience: this.investment_experience,
+            investment_horizon: this.investment_horizon,
         };
-        console.log(financialData)
+        
         const res = await fetch('http://127.0.0.1:5001/api/prompt', {
-        method: 'POST',
-        body: JSON.stringify(financialData),
-        headers: { 'Content-Type': 'application/json' },
-        });
+            method: 'POST',
+            body: JSON.stringify(financialData),
+            headers: { 'Content-Type': 'application/json' },
+            });
         
         const data = await res.json(); // extract JSON object from response body
-        console.log("response data: ", data);
+        // console.log("response data: ", data);
         this.financieel_plan = data;
 
     } catch (err) {

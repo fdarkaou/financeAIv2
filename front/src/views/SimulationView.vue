@@ -4,9 +4,7 @@
     <SectionMain>
         <BreadCrumb :projectName="dashboard.name" class="py-4" />
         <SectionTitleLineWithButton :icon="mdiViewDashboardVariant" title="Simulate your profile"> </SectionTitleLineWithButton>
-        <CardBox has-table>
             <SimulationAI />
-        </CardBox>
     </SectionMain> 
     </LayoutAuthenticated>
   </template>
@@ -18,7 +16,7 @@ import BreadCrumb from "@/components/BreadCrumb.vue";
 import SectionTitleLineWithButton from "@/components/SectionTitleLineWithButton.vue";
 import CardBox from "@/components/CardBox.vue";
 import { mdiViewDashboardVariant } from "@mdi/js";
-import SimulationAI from "@/components/SimulationAI.vue";
+import SimulationAI from "@/components/unique/SimulationAI.vue";
 
 export default {
   components: {

@@ -1,2 +1,0 @@
-import{x as n,H as p,o as r,a as h,w as d,b as a,h as i,B as u,aa as k}from"./index-9dad1ecb.js";const _={class:"checkbox"},m=a("span",{class:"check"},null,-1),b={__name:"TableCheckboxCell",props:{type:{type:String,default:"td"}},emits:["checked"],setup(c,{emit:o}){const e=n(!1);return p(e,s=>{o("checked",s)}),(s,t)=>(r(),h(k(c.type),{class:"lg:w-1"},{default:d(()=>[a("label",_,[i(a("input",{"onUpdate:modelValue":t[0]||(t[0]=l=>e.value=l),type:"checkbox"},null,512),[[u,e.value]]),m])]),_:1}))}};export{b as _};
-//# sourceMappingURL=TableCheckboxCell-f607beec.js.map

@@ -93,7 +93,7 @@
 import { supabase, websitename } from "../supabase";
 import FooterComponent from "@/components/Footer.vue";
 import NavBar from "@/components//Navbar2.vue";
-import SuccessError from '@/components/SuccessError.vue';
+import SuccessError from '@/components/unique/SuccessError.vue';
 
 
 export default {
